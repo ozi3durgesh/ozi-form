@@ -1,9 +1,9 @@
 const DB_CONFIG = {
-  DB_HOST: 'ozi-db1.c306iyoqqj8p.ap-south-1.rds.amazonaws.com',
-  DB_NAME: 'shop_ozi_form_data',
-  DB_PASSWORD: 'rLfcu9Y80S8X',
-  DB_PORT: 3306,
-  DB_USER: 'admin'
+  DB_HOST: process.env.DB_HOST || 'ozi-db1.c306iyoqqj8p.ap-south-1.rds.amazonaws.com',
+  DB_NAME: process.env.DB_NAME || 'shop_ozi_form_data',
+  DB_PASSWORD: process.env.DB_PASSWORD || 'rLfcu9Y80S8X',
+  DB_PORT: process.env.DB_PORT || 3306,
+  DB_USER: process.env.DB_USER || 'admin'
 };
 
 const SERVER_CONFIG = {
